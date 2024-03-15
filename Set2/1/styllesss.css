@@ -1,0 +1,25 @@
+* {
+	background: repeating-conic-gradient(#000 0 25%,#fff 0 50%)0 0/62px 62px
+}
+.box {
+        width:280px;
+        height:280px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-family: "Inconsolata", monospace;
+        font-size: 28px;
+        border:1px solid #c39f76;
+        box-sizing:border-box;
+	clip-path: path('M0 0v280h280V0M1 1h278v278H1M70 70v140h140V70M90 90h100v100H90')
+}
+:after {
+	content: '';
+	padding: 21%7%;
+	border: 84q solid#c39f76;
+	border-top: 0;
+	animation: r 2s linear 1e9
+}
+@keyframes r {
+	to {transform:rotate(1turn)}
+}
